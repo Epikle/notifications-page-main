@@ -1,0 +1,23 @@
+$primary-red: hsl(1, 90%, 64%);
+$primary-blue: hsl(219, 85%, 26%);
+
+$neutral-white: hsl(0, 0%, 100%);
+
+$neutral-gb-100: hsl(210, 60%, 98%);
+$neutral-gb-200: hsl(211, 68%, 94%);
+$neutral-gb-300: hsl(205, 33%, 90%);
+$neutral-gb-400: hsl(219, 14%, 63%);
+$neutral-gb-500: hsl(219, 12%, 42%);
+$neutral-gb-600: hsl(224, 21%, 14%);
+
+$fs: 16px;
+$ff: 'Plus Jakarta Sans', sans-serif;
+/* 500, 800 */
+
+$border-radius: 10px;
+
+@mixin media() {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

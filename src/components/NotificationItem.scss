@@ -1,0 +1,77 @@
+@import '../setup';
+
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+
+  a {
+    font-weight: 800;
+
+    &:hover,
+    &:focus {
+      color: $primary-blue;
+    }
+  }
+
+  &.new {
+    background-color: $neutral-gb-200;
+
+    .notification-body div:first-of-type::after {
+      content: '\25CF';
+      color: $primary-red;
+      margin-left: 0.25rem;
+    }
+  }
+
+  img {
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    align-self: flex-start;
+  }
+
+  .notification-body {
+    display: grid;
+    color: $neutral-gb-500;
+
+    .notification-name {
+      color: $neutral-gb-600;
+
+      &:hover,
+      &:focus {
+        color: $primary-blue;
+      }
+    }
+
+    .notification-private {
+      border: 1px solid $neutral-gb-300;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      font-weight: 500;
+
+      &:hover,
+      &:focus {
+        color: $neutral-gb-500;
+        background-color: $neutral-gb-200;
+      }
+    }
+  }
+
+  .notification-picture {
+    margin-left: auto;
+    border-radius: 8px;
+
+    &:hover,
+    &:focus {
+      outline: 2px solid $neutral-gb-300;
+    }
+  }
+
+  @include media() {
+    font-size: 0.85rem;
+  }
+}

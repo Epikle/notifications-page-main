@@ -1,0 +1,44 @@
+@import './setup';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  background-color: $neutral-gb-100;
+
+  font-size: $fs;
+  font-family: $ff;
+
+  @include media() {
+    margin: 0;
+    place-items: initial;
+    background-color: $neutral-white;
+  }
+}

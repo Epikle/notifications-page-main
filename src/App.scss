@@ -1,0 +1,58 @@
+@import './setup';
+
+main {
+  background-color: $neutral-white;
+  border-radius: $border-radius;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 46rem;
+
+  @include media() {
+    margin: 0;
+    border-radius: initial;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    margin-block: 1rem 2rem;
+
+    h1 {
+      font-size: 1.5rem;
+      color: $neutral-gb-600;
+
+      &::after {
+        vertical-align: middle;
+        content: attr(data-notifications);
+        background-color: $primary-blue;
+        color: $neutral-white;
+        font-size: $fs;
+        padding: 0.15rem 0.75rem;
+        border-radius: 5px;
+        margin-left: 0.5rem;
+      }
+
+      @include media() {
+        font-size: 1.25rem;
+      }
+    }
+
+    .mark-read {
+      all: unset;
+      cursor: pointer;
+      color: $neutral-gb-500;
+
+      &:hover,
+      &:focus-visible {
+        color: $primary-blue;
+      }
+
+      @include media() {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

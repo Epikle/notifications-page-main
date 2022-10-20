@@ -1,0 +1,17 @@
+@import '../setup';
+
+.attribution {
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  user-select: none;
+
+  a {
+    color: $primary-blue;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
