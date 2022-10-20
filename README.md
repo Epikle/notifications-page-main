@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [LIVE SITE](https://epikle.github.io/interactive-card-details-form-main/)
+- Live Site URL: [LIVE SITE](https://epikle.github.io/notifications-page-main/)
 
 ## My process
 
