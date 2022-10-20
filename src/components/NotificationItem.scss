@@ -40,6 +40,10 @@
     .notification-name {
       color: $neutral-gb-600;
 
+      h2 {
+        all: unset;
+      }
+
       &:hover,
       &:focus {
         color: $primary-blue;

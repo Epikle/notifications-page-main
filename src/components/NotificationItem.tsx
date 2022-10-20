@@ -22,7 +22,7 @@ const NotificationItem: React.FC<{ notification: Notification }> = ({
       <div className="notification-body">
         <div>
           <a href="#" className="notification-name">
-            {notification.name}
+            <h2>{notification.name}</h2>
           </a>{' '}
           {notification.text}{' '}
           {notification.group && (
